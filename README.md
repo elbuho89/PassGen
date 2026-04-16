@@ -27,11 +27,10 @@ Como esta es una extensión de código abierto, puedes instalarla manualmente:
 - **JavaScript (Vanilla):** Lógica pura sin dependencias externas para mayor seguridad.
 - **Manifest V3:** Cumple con los últimos estándares de seguridad y rendimiento de las extensiones de Chrome.
 
-## 📄 Licencia
+## 📄 [Licencia](/LICENSE)
 
 Este proyecto es de **Código Abierto** y se distribuye bajo la **Licencia MIT**. Esto significa que eres libre de usarlo, modificarlo y distribuirlo, siempre que mantengas los créditos del autor original.
 
 ---
 
-### Desarrollado por **ELBUHO89™**
-🌐 [github.elbuho89.org](https://github.elbuho89.org)
+🇨🇴 Hecho con ❤️ en Colombia por [**ELBUHO89™**](https://github.elbuho89.org) - 🌐 [elbuho89.org](https://github.com/elbuho89)
