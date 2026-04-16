@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "PassGen Pro 1.0 | ELBUHO89™",
+  "version": "1.0",
+  "description": "Secure password generator with Unicode support (Chinese, Cyrillic) and Web Crypto API.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "🔐"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["clipboardWrite"]
+}

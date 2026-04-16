@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-hover: #4338ca;
+      --bg-gray: #f9fafb;
+      --text-dark: #1f2937;
+      --border-color: #e5e7eb;
+    }
+    body { width: 320px; padding: 20px; font-family: 'Inter', system-ui, sans-serif; background-color: white; color: var(--text-dark); margin: 0; }
+    .header { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 20px; }
+    h3 { margin: 0; font-size: 18px; color: var(--primary); font-weight: 700; }
+    .card { background: var(--bg-gray); padding: 14px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 15px; }
+    .label-group { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 13px; font-weight: 600; }
+    input[type=range] { width: 100%; accent-color: var(--primary); cursor: pointer; margin-bottom: 15px; }
+    .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .option-item { display: flex; align-items: center; gap: 6px; font-size: 11px; cursor: pointer; padding: 4px; background: white; border-radius: 6px; border: 1px solid var(--border-color); }
+    .option-item:hover { border-color: var(--primary); }
+    #pass-display { font-family: 'JetBrains Mono', monospace; background: #ffffff; padding: 16px; word-break: break-all; margin: 15px 0; border: 2px solid var(--border-color); border-radius: 12px; font-size: 15px; min-height: 24px; text-align: center; }
+    button { background: var(--primary); color: white; border: none; padding: 12px; cursor: pointer; border-radius: 8px; width: 100%; font-size: 14px; font-weight: 600; transition: all 0.2s ease; }
+    button:hover { background: var(--primary-hover); transform: translateY(-1px); }
+    .footer { font-size: 10px; color: #9ca3af; margin-top: 20px; text-align: center; }
+    .footer a { color: var(--primary); text-decoration: none; font-weight: bold; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <span style="font-size: 24px;">🔒</span>
+    <h3>PassGen Pro 1.0</h3>
+  </div>
+  <div class="card">
+    <div class="label-group"><span>Longitud / Length</span><span id="length-val">16</span></div>
+    <input type="range" id="length-slider" min="4" max="64" value="16">
+    <div class="options-grid">
+      <label class="option-item"><input type="checkbox" id="inc-upper" checked> ABCD</label>
+      <label class="option-item"><input type="checkbox" id="inc-lower" checked> abcd</label>
+      <label class="option-item"><input type="checkbox" id="inc-numbers" checked> 1234</label>
+      <label class="option-item"><input type="checkbox" id="inc-symbols" checked> #$&@</label>
+      <label class="option-item"><input type="checkbox" id="inc-cyrillic" checked> Кирилл</label>
+      <label class="option-item"><input type="checkbox" id="inc-chinese" checked> 汉字</label>
+      <label class="option-item"><input type="checkbox" id="inc-japanese" checked> 日本語</label>
+    </div>
+  </div>
+  <div id="pass-display">---</div>
+  <button id="generate">Generar / Generate</button>
+  <div class="footer">
+    Desarrollado por <strong><a href="https://github.elbuho89.org" target="_blank">ELBUHO89™</a></strong><br>
+    <a href="https://github.com/ELBUHO89" target="_blank">github.elbuho89.org</a>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
